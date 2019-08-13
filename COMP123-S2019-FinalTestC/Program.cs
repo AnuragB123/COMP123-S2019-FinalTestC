@@ -9,7 +9,7 @@ namespace COMP123_S2019_FinalTestC
 {
     public static class Program
     {
-       
+       //Main Form
         public static CharacterGenerationForm characterForm;
         /// <summary>
         /// The main entry point for the application.
@@ -19,7 +19,7 @@ namespace COMP123_S2019_FinalTestC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            //Intializes the form
             characterForm = new CharacterGenerationForm();
 
             Application.Run(characterForm);

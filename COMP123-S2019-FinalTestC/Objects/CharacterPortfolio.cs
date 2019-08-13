@@ -15,8 +15,6 @@ namespace COMP123_S2019_FinalTestC.Objects
         // Identity
         public Identiy Identiy { get; set; }
 
-
-
         // characteristics
         public string Strength { get; set; }
         public string Dexterity { get; set; }
