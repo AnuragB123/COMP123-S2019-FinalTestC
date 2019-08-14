@@ -69,6 +69,35 @@ namespace COMP123_S2019_FinalTestC.Views
             int lastNameRandomNumber = firstNameNumber.Next(1, 88799);
             string lastName = LastNameList[lastNameRandomNumber];
             LastNameDataLabel.Text = lastName;
+        }
+
+        public void GenerateAbilitiesValues()
+        {
+            Random Value = new Random();
+            int strengthValueRandomNumber = Value.Next(1, 15);
+            StrengthDataLabel.Text = strengthValueRandomNumber.ToString();
+
+            int dexterityValueRandomNumber = Value.Next(1, 15);
+            DexterityDataLabel.Text = dexterityValueRandomNumber.ToString();
+
+            int enduranceValueRandomNumber = Value.Next(1, 15);
+            EnduranceDataLabel.Text = enduranceValueRandomNumber.ToString();
+
+            int intellectValueRandomNumber = Value.Next(1, 15);
+            IntellectDataLabel.Text = intellectValueRandomNumber.ToString();
+
+            int educationValueRandomNumber = Value.Next(1, 15);
+            EducationDataLabel.Text = educationValueRandomNumber.ToString();
+
+            int socialStandingValueRandomNumber = Value.Next(1, 15);
+            SocailStandingDataLabel.Text = socialStandingValueRandomNumber.ToString();
+
+            Program.character.Strength = strengthValueRandomNumber.ToString();
+            Program.character.Dexterity = dexterityValueRandomNumber.ToString();
+            Program.character.Endurance = enduranceValueRandomNumber.ToString();
+            Program.character.Intellect = intellectValueRandomNumber.ToString();
+            Program.character.Education = enduranceValueRandomNumber.ToString();
+            Program.character.SocialStanding = SocailStandingDataLabel.Text;
 
 
         }
@@ -114,6 +143,11 @@ namespace COMP123_S2019_FinalTestC.Views
         {
             LoadNames();
             GenerateNames();
+        }
+
+        private void GenerateAbiltiesButton_Click(object sender, EventArgs e)
+        {
+            GenerateAbilitiesValues();
         }
     }
 }

@@ -23,6 +23,8 @@ namespace COMP123_S2019_FinalTestC
             Application.SetCompatibleTextRenderingDefault(false);
             //Intializes the form
             characterForm = new CharacterGenerationForm();
+            //Intializes the character
+            character = new CharacterPortfolio();
 
             Application.Run(characterForm);
         }
