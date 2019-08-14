@@ -27,7 +27,7 @@ namespace COMP123_S2019_FinalTestC.Objects
         List<Skill> Skills;
 
         // constructor
-        CharacterPortfolio()
+        public CharacterPortfolio()
         {
             this.Skills = new List<Skill>();
             this.Identiy = new Identiy();

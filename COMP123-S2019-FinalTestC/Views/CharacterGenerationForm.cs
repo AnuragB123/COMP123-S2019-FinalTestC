@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP123_S2019_FinalTestC.Objects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -105,6 +106,8 @@ namespace COMP123_S2019_FinalTestC.Views
         private void GenerateNameButton_Click(object sender, EventArgs e)
         {
             GenerateNames();
+            Program.character.Identiy.FirstName = FirstNameDataLabel.Text;
+            Program.character.Identiy.LastName = LastNameDataLabel.Text;
         }
 
         private void CharacterGenerationForm_Load(object sender, EventArgs e)
