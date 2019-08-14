@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*
- * STUDENT NAME:
- * STUDENT ID:
+ * STUDENT NAME: Anurag
+ * STUDENT ID: 301050634
  * DESCRIPTION: This is the Character Portfolio class
 */
 namespace COMP123_S2019_FinalTestC.Objects

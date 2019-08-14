@@ -6,7 +6,11 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * STUDENT NAME: Anurag
+ * STUDENT ID: 301050634
+ * DESCRIPTION: This is the About Info Form
+*/
 namespace COMP123_S2019_FinalTestC.Views
 {
     public partial class AboutInformation : Form

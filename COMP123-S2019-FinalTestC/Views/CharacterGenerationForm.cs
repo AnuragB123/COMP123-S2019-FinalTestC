@@ -8,8 +8,8 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 /*
- * STUDENT NAME:
- * STUDENT ID:
+ * STUDENT NAME: Anurag
+ * STUDENT ID: 301050634
  * DESCRIPTION: This is the main form for the application
 */
 namespace COMP123_S2019_FinalTestC.Views
