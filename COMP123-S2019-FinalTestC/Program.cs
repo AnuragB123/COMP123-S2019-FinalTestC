@@ -12,6 +12,7 @@ namespace COMP123_S2019_FinalTestC
     {
         //Main Form
         public static CharacterGenerationForm characterForm;
+        public static AboutInformation aboutInformation;
         public static CharacterPortfolio character { get; set; }
         /// <summary>
         /// The main entry point for the application.
@@ -23,6 +24,7 @@ namespace COMP123_S2019_FinalTestC
             Application.SetCompatibleTextRenderingDefault(false);
             //Intializes the form
             characterForm = new CharacterGenerationForm();
+            aboutInformation = new AboutInformation();
             //Intializes the character
             character = new CharacterPortfolio();
 

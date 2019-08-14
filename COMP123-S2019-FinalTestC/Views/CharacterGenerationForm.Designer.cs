@@ -53,7 +53,21 @@
             this.EducationDataLabel = new System.Windows.Forms.Label();
             this.SocailStandingDataLabel = new System.Windows.Forms.Label();
             this.SkillsPage = new System.Windows.Forms.TabPage();
+            this.SkillsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.SkillsHeadingLabel = new System.Windows.Forms.Label();
+            this.SkillsOneLabel = new System.Windows.Forms.Label();
+            this.SkillsFourLabel = new System.Windows.Forms.Label();
+            this.SkillsThreeLabel = new System.Windows.Forms.Label();
+            this.SkillsTwoLabel = new System.Windows.Forms.Label();
+            this.GenerateSkills = new System.Windows.Forms.Button();
             this.CharacterSheetPage = new System.Windows.Forms.TabPage();
+            this.CharacterTableLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.FnLabel = new System.Windows.Forms.Label();
+            this.LnLabel = new System.Windows.Forms.Label();
+            this.FnDataLabel = new System.Windows.Forms.Label();
+            this.LnDataLabel = new System.Windows.Forms.Label();
+            this.SLabel = new System.Windows.Forms.Label();
+            this.SdLabel = new System.Windows.Forms.Label();
             this.MainToolStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -69,23 +83,31 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NextButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
-            this.SkillsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.SkillsHeadingLabel = new System.Windows.Forms.Label();
-            this.SkillsOneLabel = new System.Windows.Forms.Label();
-            this.SkillsTwoLabel = new System.Windows.Forms.Label();
-            this.SkillsFourLabel = new System.Windows.Forms.Label();
-            this.SkillsThreeLabel = new System.Windows.Forms.Label();
-            this.GenerateSkills = new System.Windows.Forms.Button();
+            this.DLabel = new System.Windows.Forms.Label();
+            this.ELabel = new System.Windows.Forms.Label();
+            this.ILabel = new System.Windows.Forms.Label();
+            this.EnLabel = new System.Windows.Forms.Label();
+            this.SsLabel = new System.Windows.Forms.Label();
+            this.SoLabel = new System.Windows.Forms.Label();
+            this.StLabel = new System.Windows.Forms.Label();
+            this.SfLabel = new System.Windows.Forms.Label();
+            this.SthLabel = new System.Windows.Forms.Label();
+            this.ddLabel = new System.Windows.Forms.Label();
+            this.edLabel = new System.Windows.Forms.Label();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.eddLabel = new System.Windows.Forms.Label();
+            this.ssdLabel = new System.Windows.Forms.Label();
             this.MainTabControl.SuspendLayout();
             this.IdentityPage.SuspendLayout();
             this.IdentityTableLayoutPanel.SuspendLayout();
             this.AbilityPage.SuspendLayout();
             this.AbilitiesTableLayoutPanel.SuspendLayout();
             this.SkillsPage.SuspendLayout();
+            this.SkillsTableLayoutPanel.SuspendLayout();
             this.CharacterSheetPage.SuspendLayout();
+            this.CharacterTableLayout.SuspendLayout();
             this.MainToolStrip.SuspendLayout();
             this.MainMenuStrip.SuspendLayout();
-            this.SkillsTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTabControl
@@ -418,8 +440,116 @@
             this.SkillsPage.Text = "Skills";
             this.SkillsPage.UseVisualStyleBackColor = true;
             // 
+            // SkillsTableLayoutPanel
+            // 
+            this.SkillsTableLayoutPanel.ColumnCount = 4;
+            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsHeadingLabel, 0, 0);
+            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsOneLabel, 0, 1);
+            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsFourLabel, 2, 2);
+            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsThreeLabel, 0, 2);
+            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsTwoLabel, 2, 1);
+            this.SkillsTableLayoutPanel.Controls.Add(this.GenerateSkills, 2, 3);
+            this.SkillsTableLayoutPanel.Location = new System.Drawing.Point(4, 4);
+            this.SkillsTableLayoutPanel.Name = "SkillsTableLayoutPanel";
+            this.SkillsTableLayoutPanel.RowCount = 4;
+            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SkillsTableLayoutPanel.Size = new System.Drawing.Size(730, 375);
+            this.SkillsTableLayoutPanel.TabIndex = 0;
+            // 
+            // SkillsHeadingLabel
+            // 
+            this.SkillsHeadingLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkillsHeadingLabel.BackColor = System.Drawing.Color.White;
+            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsHeadingLabel, 4);
+            this.SkillsHeadingLabel.Location = new System.Drawing.Point(3, 0);
+            this.SkillsHeadingLabel.Name = "SkillsHeadingLabel";
+            this.SkillsHeadingLabel.Size = new System.Drawing.Size(724, 93);
+            this.SkillsHeadingLabel.TabIndex = 0;
+            this.SkillsHeadingLabel.Text = "Skills";
+            this.SkillsHeadingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SkillsOneLabel
+            // 
+            this.SkillsOneLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkillsOneLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SkillsOneLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsOneLabel, 2);
+            this.SkillsOneLabel.Location = new System.Drawing.Point(3, 93);
+            this.SkillsOneLabel.Name = "SkillsOneLabel";
+            this.SkillsOneLabel.Size = new System.Drawing.Size(358, 93);
+            this.SkillsOneLabel.TabIndex = 0;
+            this.SkillsOneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SkillsFourLabel
+            // 
+            this.SkillsFourLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkillsFourLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SkillsFourLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsFourLabel, 2);
+            this.SkillsFourLabel.Location = new System.Drawing.Point(367, 186);
+            this.SkillsFourLabel.Name = "SkillsFourLabel";
+            this.SkillsFourLabel.Size = new System.Drawing.Size(360, 93);
+            this.SkillsFourLabel.TabIndex = 0;
+            this.SkillsFourLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SkillsThreeLabel
+            // 
+            this.SkillsThreeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkillsThreeLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SkillsThreeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsThreeLabel, 2);
+            this.SkillsThreeLabel.Location = new System.Drawing.Point(3, 186);
+            this.SkillsThreeLabel.Name = "SkillsThreeLabel";
+            this.SkillsThreeLabel.Size = new System.Drawing.Size(358, 93);
+            this.SkillsThreeLabel.TabIndex = 0;
+            this.SkillsThreeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SkillsTwoLabel
+            // 
+            this.SkillsTwoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkillsTwoLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SkillsTwoLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsTwoLabel, 2);
+            this.SkillsTwoLabel.Location = new System.Drawing.Point(367, 93);
+            this.SkillsTwoLabel.Name = "SkillsTwoLabel";
+            this.SkillsTwoLabel.Size = new System.Drawing.Size(360, 93);
+            this.SkillsTwoLabel.TabIndex = 0;
+            this.SkillsTwoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // GenerateSkills
+            // 
+            this.GenerateSkills.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SkillsTableLayoutPanel.SetColumnSpan(this.GenerateSkills, 2);
+            this.GenerateSkills.Location = new System.Drawing.Point(367, 282);
+            this.GenerateSkills.Name = "GenerateSkills";
+            this.GenerateSkills.Size = new System.Drawing.Size(360, 90);
+            this.GenerateSkills.TabIndex = 1;
+            this.GenerateSkills.Text = "Generate Skills";
+            this.GenerateSkills.UseVisualStyleBackColor = true;
+            this.GenerateSkills.Click += new System.EventHandler(this.GenerateSkills_Click);
+            // 
             // CharacterSheetPage
             // 
+            this.CharacterSheetPage.Controls.Add(this.CharacterTableLayout);
             this.CharacterSheetPage.Controls.Add(this.MainToolStrip);
             this.CharacterSheetPage.Controls.Add(this.MainMenuStrip);
             this.CharacterSheetPage.Location = new System.Drawing.Point(4, 38);
@@ -428,6 +558,117 @@
             this.CharacterSheetPage.TabIndex = 3;
             this.CharacterSheetPage.Text = "Character Sheet";
             this.CharacterSheetPage.UseVisualStyleBackColor = true;
+            // 
+            // CharacterTableLayout
+            // 
+            this.CharacterTableLayout.ColumnCount = 4;
+            this.CharacterTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharacterTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharacterTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharacterTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharacterTableLayout.Controls.Add(this.FnLabel, 0, 0);
+            this.CharacterTableLayout.Controls.Add(this.LnLabel, 0, 1);
+            this.CharacterTableLayout.Controls.Add(this.FnDataLabel, 1, 0);
+            this.CharacterTableLayout.Controls.Add(this.LnDataLabel, 1, 1);
+            this.CharacterTableLayout.Controls.Add(this.SLabel, 2, 0);
+            this.CharacterTableLayout.Controls.Add(this.SdLabel, 3, 0);
+            this.CharacterTableLayout.Controls.Add(this.DLabel, 2, 1);
+            this.CharacterTableLayout.Controls.Add(this.ELabel, 2, 2);
+            this.CharacterTableLayout.Controls.Add(this.ILabel, 2, 3);
+            this.CharacterTableLayout.Controls.Add(this.EnLabel, 2, 4);
+            this.CharacterTableLayout.Controls.Add(this.SsLabel, 2, 5);
+            this.CharacterTableLayout.Controls.Add(this.SoLabel, 0, 3);
+            this.CharacterTableLayout.Controls.Add(this.SfLabel, 1, 4);
+            this.CharacterTableLayout.Controls.Add(this.StLabel, 1, 3);
+            this.CharacterTableLayout.Controls.Add(this.SthLabel, 0, 4);
+            this.CharacterTableLayout.Controls.Add(this.ddLabel, 3, 1);
+            this.CharacterTableLayout.Controls.Add(this.edLabel, 3, 2);
+            this.CharacterTableLayout.Controls.Add(this.idLabel, 3, 3);
+            this.CharacterTableLayout.Controls.Add(this.eddLabel, 3, 4);
+            this.CharacterTableLayout.Controls.Add(this.ssdLabel, 3, 5);
+            this.CharacterTableLayout.Location = new System.Drawing.Point(4, 59);
+            this.CharacterTableLayout.Name = "CharacterTableLayout";
+            this.CharacterTableLayout.RowCount = 6;
+            this.CharacterTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharacterTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharacterTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharacterTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharacterTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharacterTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CharacterTableLayout.Size = new System.Drawing.Size(745, 384);
+            this.CharacterTableLayout.TabIndex = 2;
+            // 
+            // FnLabel
+            // 
+            this.FnLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FnLabel.AutoSize = true;
+            this.FnLabel.Location = new System.Drawing.Point(3, 0);
+            this.FnLabel.Name = "FnLabel";
+            this.FnLabel.Size = new System.Drawing.Size(180, 63);
+            this.FnLabel.TabIndex = 0;
+            this.FnLabel.Text = "First Name";
+            this.FnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LnLabel
+            // 
+            this.LnLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LnLabel.AutoSize = true;
+            this.LnLabel.Location = new System.Drawing.Point(3, 63);
+            this.LnLabel.Name = "LnLabel";
+            this.LnLabel.Size = new System.Drawing.Size(180, 63);
+            this.LnLabel.TabIndex = 0;
+            this.LnLabel.Text = "Last Name";
+            this.LnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FnDataLabel
+            // 
+            this.FnDataLabel.AutoSize = true;
+            this.FnDataLabel.Location = new System.Drawing.Point(189, 0);
+            this.FnDataLabel.Name = "FnDataLabel";
+            this.FnDataLabel.Size = new System.Drawing.Size(0, 29);
+            this.FnDataLabel.TabIndex = 0;
+            this.FnDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LnDataLabel
+            // 
+            this.LnDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LnDataLabel.AutoSize = true;
+            this.LnDataLabel.Location = new System.Drawing.Point(189, 63);
+            this.LnDataLabel.Name = "LnDataLabel";
+            this.LnDataLabel.Size = new System.Drawing.Size(180, 63);
+            this.LnDataLabel.TabIndex = 0;
+            this.LnDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SLabel
+            // 
+            this.SLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SLabel.AutoSize = true;
+            this.SLabel.Location = new System.Drawing.Point(375, 0);
+            this.SLabel.Name = "SLabel";
+            this.SLabel.Size = new System.Drawing.Size(180, 63);
+            this.SLabel.TabIndex = 0;
+            this.SLabel.Text = "Strength:";
+            this.SLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SdLabel
+            // 
+            this.SdLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SdLabel.AutoSize = true;
+            this.SdLabel.Location = new System.Drawing.Point(561, 0);
+            this.SdLabel.Name = "SdLabel";
+            this.SdLabel.Size = new System.Drawing.Size(181, 63);
+            this.SdLabel.TabIndex = 0;
+            this.SdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainToolStrip
             // 
@@ -526,6 +767,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -540,6 +782,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // NextButton
             // 
@@ -561,111 +804,183 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // SkillsTableLayoutPanel
+            // DLabel
             // 
-            this.SkillsTableLayoutPanel.ColumnCount = 4;
-            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsHeadingLabel, 0, 0);
-            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsOneLabel, 0, 1);
-            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsFourLabel, 2, 2);
-            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsThreeLabel, 0, 2);
-            this.SkillsTableLayoutPanel.Controls.Add(this.SkillsTwoLabel, 2, 1);
-            this.SkillsTableLayoutPanel.Controls.Add(this.GenerateSkills, 2, 3);
-            this.SkillsTableLayoutPanel.Location = new System.Drawing.Point(4, 4);
-            this.SkillsTableLayoutPanel.Name = "SkillsTableLayoutPanel";
-            this.SkillsTableLayoutPanel.RowCount = 4;
-            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SkillsTableLayoutPanel.Size = new System.Drawing.Size(730, 375);
-            this.SkillsTableLayoutPanel.TabIndex = 0;
-            // 
-            // SkillsHeadingLabel
-            // 
-            this.SkillsHeadingLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.DLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkillsHeadingLabel.BackColor = System.Drawing.Color.White;
-            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsHeadingLabel, 4);
-            this.SkillsHeadingLabel.Location = new System.Drawing.Point(3, 0);
-            this.SkillsHeadingLabel.Name = "SkillsHeadingLabel";
-            this.SkillsHeadingLabel.Size = new System.Drawing.Size(724, 93);
-            this.SkillsHeadingLabel.TabIndex = 0;
-            this.SkillsHeadingLabel.Text = "Skills";
-            this.SkillsHeadingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DLabel.AutoSize = true;
+            this.DLabel.Location = new System.Drawing.Point(375, 63);
+            this.DLabel.Name = "DLabel";
+            this.DLabel.Size = new System.Drawing.Size(180, 63);
+            this.DLabel.TabIndex = 0;
+            this.DLabel.Text = "Dexterity:";
+            this.DLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SkillsOneLabel
+            // ELabel
             // 
-            this.SkillsOneLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ELabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkillsOneLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SkillsOneLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsOneLabel, 2);
-            this.SkillsOneLabel.Location = new System.Drawing.Point(3, 93);
-            this.SkillsOneLabel.Name = "SkillsOneLabel";
-            this.SkillsOneLabel.Size = new System.Drawing.Size(358, 93);
-            this.SkillsOneLabel.TabIndex = 0;
-            this.SkillsOneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ELabel.AutoSize = true;
+            this.ELabel.Location = new System.Drawing.Point(375, 126);
+            this.ELabel.Name = "ELabel";
+            this.ELabel.Size = new System.Drawing.Size(180, 63);
+            this.ELabel.TabIndex = 0;
+            this.ELabel.Text = "Endurance:";
+            this.ELabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SkillsTwoLabel
+            // ILabel
             // 
-            this.SkillsTwoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ILabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkillsTwoLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SkillsTwoLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsTwoLabel, 2);
-            this.SkillsTwoLabel.Location = new System.Drawing.Point(367, 93);
-            this.SkillsTwoLabel.Name = "SkillsTwoLabel";
-            this.SkillsTwoLabel.Size = new System.Drawing.Size(360, 93);
-            this.SkillsTwoLabel.TabIndex = 0;
-            this.SkillsTwoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ILabel.AutoSize = true;
+            this.ILabel.Location = new System.Drawing.Point(375, 189);
+            this.ILabel.Name = "ILabel";
+            this.ILabel.Size = new System.Drawing.Size(180, 63);
+            this.ILabel.TabIndex = 0;
+            this.ILabel.Text = "Intellect:";
+            this.ILabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SkillsFourLabel
+            // EnLabel
             // 
-            this.SkillsFourLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.EnLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkillsFourLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SkillsFourLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsFourLabel, 2);
-            this.SkillsFourLabel.Location = new System.Drawing.Point(367, 186);
-            this.SkillsFourLabel.Name = "SkillsFourLabel";
-            this.SkillsFourLabel.Size = new System.Drawing.Size(360, 93);
-            this.SkillsFourLabel.TabIndex = 0;
-            this.SkillsFourLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EnLabel.AutoSize = true;
+            this.EnLabel.Location = new System.Drawing.Point(375, 252);
+            this.EnLabel.Name = "EnLabel";
+            this.EnLabel.Size = new System.Drawing.Size(180, 63);
+            this.EnLabel.TabIndex = 0;
+            this.EnLabel.Text = "Education:";
+            this.EnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SkillsThreeLabel
+            // SsLabel
             // 
-            this.SkillsThreeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkillsThreeLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SkillsThreeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SkillsTableLayoutPanel.SetColumnSpan(this.SkillsThreeLabel, 2);
-            this.SkillsThreeLabel.Location = new System.Drawing.Point(3, 186);
-            this.SkillsThreeLabel.Name = "SkillsThreeLabel";
-            this.SkillsThreeLabel.Size = new System.Drawing.Size(358, 93);
-            this.SkillsThreeLabel.TabIndex = 0;
-            this.SkillsThreeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SsLabel.AutoSize = true;
+            this.SsLabel.Location = new System.Drawing.Point(375, 315);
+            this.SsLabel.Name = "SsLabel";
+            this.SsLabel.Size = new System.Drawing.Size(180, 69);
+            this.SsLabel.TabIndex = 0;
+            this.SsLabel.Text = "Socal Standing:";
+            this.SsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // GenerateSkills
+            // SoLabel
             // 
-            this.GenerateSkills.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SkillsTableLayoutPanel.SetColumnSpan(this.GenerateSkills, 2);
-            this.GenerateSkills.Location = new System.Drawing.Point(367, 282);
-            this.GenerateSkills.Name = "GenerateSkills";
-            this.GenerateSkills.Size = new System.Drawing.Size(360, 90);
-            this.GenerateSkills.TabIndex = 1;
-            this.GenerateSkills.Text = "Generate Skills";
-            this.GenerateSkills.UseVisualStyleBackColor = true;
+            this.SoLabel.AutoSize = true;
+            this.SoLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SoLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SoLabel.Location = new System.Drawing.Point(3, 189);
+            this.SoLabel.Name = "SoLabel";
+            this.SoLabel.Size = new System.Drawing.Size(180, 63);
+            this.SoLabel.TabIndex = 0;
+            this.SoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // StLabel
+            // 
+            this.StLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StLabel.AutoSize = true;
+            this.StLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.StLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StLabel.Location = new System.Drawing.Point(189, 189);
+            this.StLabel.Name = "StLabel";
+            this.StLabel.Size = new System.Drawing.Size(180, 63);
+            this.StLabel.TabIndex = 1;
+            this.StLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SfLabel
+            // 
+            this.SfLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SfLabel.AutoSize = true;
+            this.SfLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SfLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SfLabel.Location = new System.Drawing.Point(189, 252);
+            this.SfLabel.Name = "SfLabel";
+            this.SfLabel.Size = new System.Drawing.Size(180, 63);
+            this.SfLabel.TabIndex = 2;
+            this.SfLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SthLabel
+            // 
+            this.SthLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SthLabel.AutoSize = true;
+            this.SthLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SthLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SthLabel.Location = new System.Drawing.Point(3, 252);
+            this.SthLabel.Name = "SthLabel";
+            this.SthLabel.Size = new System.Drawing.Size(180, 63);
+            this.SthLabel.TabIndex = 3;
+            this.SthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ddLabel
+            // 
+            this.ddLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ddLabel.AutoSize = true;
+            this.ddLabel.Location = new System.Drawing.Point(561, 63);
+            this.ddLabel.Name = "ddLabel";
+            this.ddLabel.Size = new System.Drawing.Size(181, 63);
+            this.ddLabel.TabIndex = 4;
+            this.ddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // edLabel
+            // 
+            this.edLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.edLabel.AutoSize = true;
+            this.edLabel.Location = new System.Drawing.Point(561, 126);
+            this.edLabel.Name = "edLabel";
+            this.edLabel.Size = new System.Drawing.Size(181, 63);
+            this.edLabel.TabIndex = 5;
+            this.edLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // idLabel
+            // 
+            this.idLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.idLabel.AutoSize = true;
+            this.idLabel.Location = new System.Drawing.Point(561, 189);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(181, 63);
+            this.idLabel.TabIndex = 6;
+            this.idLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // eddLabel
+            // 
+            this.eddLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.eddLabel.AutoSize = true;
+            this.eddLabel.Location = new System.Drawing.Point(561, 252);
+            this.eddLabel.Name = "eddLabel";
+            this.eddLabel.Size = new System.Drawing.Size(181, 63);
+            this.eddLabel.TabIndex = 7;
+            this.eddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ssdLabel
+            // 
+            this.ssdLabel.AutoSize = true;
+            this.ssdLabel.Location = new System.Drawing.Point(561, 315);
+            this.ssdLabel.Name = "ssdLabel";
+            this.ssdLabel.Size = new System.Drawing.Size(79, 29);
+            this.ssdLabel.TabIndex = 8;
+            this.ssdLabel.Text = "label1";
             // 
             // CharacterGenerationForm
             // 
@@ -683,13 +998,15 @@
             this.AbilityPage.ResumeLayout(false);
             this.AbilitiesTableLayoutPanel.ResumeLayout(false);
             this.SkillsPage.ResumeLayout(false);
+            this.SkillsTableLayoutPanel.ResumeLayout(false);
             this.CharacterSheetPage.ResumeLayout(false);
             this.CharacterSheetPage.PerformLayout();
+            this.CharacterTableLayout.ResumeLayout(false);
+            this.CharacterTableLayout.PerformLayout();
             this.MainToolStrip.ResumeLayout(false);
             this.MainToolStrip.PerformLayout();
             this.MainMenuStrip.ResumeLayout(false);
             this.MainMenuStrip.PerformLayout();
-            this.SkillsTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -743,5 +1060,26 @@
         private System.Windows.Forms.Label SkillsThreeLabel;
         private System.Windows.Forms.Label SkillsTwoLabel;
         private System.Windows.Forms.Button GenerateSkills;
+        private System.Windows.Forms.TableLayoutPanel CharacterTableLayout;
+        private System.Windows.Forms.Label FnLabel;
+        private System.Windows.Forms.Label LnLabel;
+        private System.Windows.Forms.Label FnDataLabel;
+        private System.Windows.Forms.Label LnDataLabel;
+        private System.Windows.Forms.Label SLabel;
+        private System.Windows.Forms.Label SdLabel;
+        private System.Windows.Forms.Label DLabel;
+        private System.Windows.Forms.Label ELabel;
+        private System.Windows.Forms.Label ILabel;
+        private System.Windows.Forms.Label EnLabel;
+        private System.Windows.Forms.Label SsLabel;
+        private System.Windows.Forms.Label SoLabel;
+        private System.Windows.Forms.Label SfLabel;
+        private System.Windows.Forms.Label StLabel;
+        private System.Windows.Forms.Label SthLabel;
+        private System.Windows.Forms.Label idLabel;
+        private System.Windows.Forms.Label ddLabel;
+        private System.Windows.Forms.Label edLabel;
+        private System.Windows.Forms.Label eddLabel;
+        private System.Windows.Forms.Label ssdLabel;
     }
 }

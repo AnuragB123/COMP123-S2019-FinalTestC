@@ -16,9 +16,12 @@ namespace COMP123_S2019_FinalTestC.Views
 {
     public partial class CharacterGenerationForm : COMP123_S2019_FinalTestC.Views.MasterForm
     {
-        //two string list
+        //string list for first name and last name
         List<string> FirstNameList = new List<string>();
         List<string> LastNameList = new List<string>();
+
+        //string list for the skills
+        List<string> SkillsList = new List<string>();
         
         /// <summary>
         /// This is the default constructor of Character Generation Form
@@ -108,6 +111,41 @@ namespace COMP123_S2019_FinalTestC.Views
             Program.character.Education = enduranceValueRandomNumber.ToString();
             Program.character.SocialStanding = SocailStandingDataLabel.Text;
         }
+
+        /// <summary>
+        /// This is a method that loads skills from text file into Skills List
+        /// </summary>
+        public void LoadSkills()
+        {
+            string skillsFileName = "C:/Anurag/" +
+                "Centennial College/1st Year/Summer Semester/COMP123- Programming 2/" +
+                "COMP123-S2019-FinalTestC/COMP123-S2019-FinalTestC/Data/skills.txt";
+            TextReader skillsReader = new StreamReader(skillsFileName);
+            string aSkill = skillsReader.ReadLine();
+            while (aSkill != null)
+            {
+                SkillsList.Add(aSkill);
+                aSkill = skillsReader.ReadLine();
+            }
+        }
+
+        public void GenerateRandomSkills()
+        {
+            Random skillsValue = new Random();
+
+            int randomSkillOne = skillsValue.Next(1, 99);
+            SkillsOneLabel.Text = SkillsList[randomSkillOne];
+
+            int randomSkillTwo = skillsValue.Next(1, 99);
+            SkillsTwoLabel.Text = SkillsList[randomSkillOne];
+
+            int randomSkillThree = skillsValue.Next(1, 99);
+            SkillsThreeLabel.Text = SkillsList[randomSkillOne];
+
+            int randomSkillFour = skillsValue.Next(1, 99);
+            SkillsFourLabel.Text = SkillsList[randomSkillOne];
+
+        }
         /// <summary>
         /// This is the event handler for the BackButton Click event
         /// </summary>
@@ -155,6 +193,23 @@ namespace COMP123_S2019_FinalTestC.Views
         {
             LoadNames();
             GenerateNames();
+            LoadSkills();
+            if (MainTabControl.SelectedIndex == 3)
+            {
+                FnDataLabel.Text = Program.character.Identiy.FirstName;
+                LnDataLabel.Text = Program.character.Identiy.LastName;
+                SoLabel.Text = SkillsOneLabel.Text;
+                StLabel.Text = SkillsTwoLabel.Text;
+                SthLabel.Text = SkillsThreeLabel.Text;
+                SfLabel.Text = SkillsFourLabel.Text;
+                SdLabel.Text = Program.character.Strength;
+                ddLabel.Text = Program.character.Dexterity;
+                edLabel.Text = Program.character.Endurance;
+                idLabel.Text = Program.character.Intellect;
+                eddLabel.Text = Program.character.Education;
+                ssdLabel.Text = Program.character.SocialStanding;
+
+            }
         }
 
         /// <summary>
@@ -165,6 +220,36 @@ namespace COMP123_S2019_FinalTestC.Views
         private void GenerateAbiltiesButton_Click(object sender, EventArgs e)
         {
             GenerateAbilitiesValues();
+        }
+
+        /// <summary>
+        /// This is the event handler when Generate Skills Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GenerateSkills_Click(object sender, EventArgs e)
+        {
+            GenerateRandomSkills();
+        }
+
+        /// <summary>
+        /// This is the event handler when exit menu strip Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        /// <summary>
+        /// This is the event handler when about menu strip Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.aboutInformation.ShowDialog();
         }
     }
 }
