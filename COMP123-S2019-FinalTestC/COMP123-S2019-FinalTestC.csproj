@@ -95,7 +95,7 @@
   <ItemGroup>
     <Content Include="Data\firstNames.txt" />
     <Content Include="Data\lastNames.txt" />
-    <Content Include="Data\Skills.txt" />
+    <Content Include="Data\skills.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

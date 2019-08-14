@@ -15,6 +15,10 @@ namespace COMP123_S2019_FinalTestC.Views
 {
     public partial class CharacterGenerationForm : COMP123_S2019_FinalTestC.Views.MasterForm
     {
+        //two string list
+        List<string> FirstNameList = new List<string>();
+        List<string> LastNameList = new List<string>();
+        
         /// <summary>
         /// This is the default constructor of Character Generation Form
         /// </summary>
@@ -23,6 +27,50 @@ namespace COMP123_S2019_FinalTestC.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Loads the two text files into the respective lists
+        /// </summary>
+        public void LoadNames()
+        {
+            string firstNameFileName = "C:/Anurag/" +
+                "Centennial College/1st Year/Summer Semester/COMP123- Programming 2/" +
+                "COMP123-S2019-FinalTestC/COMP123-S2019-FinalTestC/Data/firstNames.txt";
+            TextReader firstNameReader = new StreamReader(firstNameFileName);
+            string aFirstName = firstNameReader.ReadLine();
+            while (aFirstName != null)
+            {
+                FirstNameList.Add(aFirstName);
+                aFirstName = firstNameReader.ReadLine();
+            }
+
+            string lastNameFileName = "C:/Anurag/" +
+               "Centennial College/1st Year/Summer Semester/COMP123- Programming 2/" +
+               "COMP123-S2019-FinalTestC/COMP123-S2019-FinalTestC/Data/lastNames.txt";
+            TextReader lastNameReader = new StreamReader(lastNameFileName);
+            string aLastName = lastNameReader.ReadLine();
+            while (aLastName != null)
+            {
+                LastNameList.Add(aLastName);
+                aLastName = lastNameReader.ReadLine();
+            }
+        }
+
+        public void GenerateNames()
+        {
+            //First Name Generator
+            Random lastNameNumber = new Random();
+            int firstNameRandomNumber = lastNameNumber.Next(1, 5494);
+            string firstName = FirstNameList[firstNameRandomNumber];
+            FirstNameDataLabel.Text = firstName;
+
+            //Last Name Generator
+            Random firstNameNumber = new Random();
+            int lastNameRandomNumber = firstNameNumber.Next(1, 88799);
+            string lastName = LastNameList[lastNameRandomNumber];
+            LastNameDataLabel.Text = lastName;
+
+
+        }
         /// <summary>
         /// This is the event handler for the BackButton Click event
         /// </summary>
@@ -56,39 +104,13 @@ namespace COMP123_S2019_FinalTestC.Views
         /// <param name="e"></param>
         private void GenerateNameButton_Click(object sender, EventArgs e)
         {
-            //First Name generator
-            string firstNameFileName = "C:/Anurag/" +
-                "Centennial College/1st Year/Summer Semester/COMP123- Programming 2/" +
-                "COMP123-S2019-FinalTestC/COMP123-S2019-FinalTestC/Data/firstNames.txt";
-            List<string> firstNameLines = new List<string>();
-            TextReader firstNameReader = new StreamReader(firstNameFileName);
-            string aFirstName = firstNameReader.ReadLine();
-            while(aFirstName != null)
-            {
-                firstNameLines.Add(aFirstName);
-                aFirstName = firstNameReader.ReadLine();
-            }
-            Random lastNameNumber = new Random();
-            int firstNameRandomNumber = lastNameNumber.Next(1, 5494);
-            string firstName = firstNameLines[firstNameRandomNumber];
-            FirstNameDataLabel.Text = firstName;
+            GenerateNames();
+        }
 
-            //Last Name generator
-            string lastNameFileName = "C:/Anurag/" +
-               "Centennial College/1st Year/Summer Semester/COMP123- Programming 2/" +
-               "COMP123-S2019-FinalTestC/COMP123-S2019-FinalTestC/Data/lastNames.txt";
-            List<string> lastNameLines = new List<string>();
-            TextReader lastNameReader = new StreamReader(lastNameFileName);
-            string aLastName = lastNameReader.ReadLine();
-            while (aLastName != null)
-            {
-                lastNameLines.Add(aLastName);
-                aLastName = lastNameReader.ReadLine();
-            }
-            Random firstNameNumber = new Random();
-            int lastNameRandomNumber = firstNameNumber.Next(1, 88799);
-            string lastName = lastNameLines[lastNameRandomNumber];
-            LastNameDataLabel.Text = lastName;
+        private void CharacterGenerationForm_Load(object sender, EventArgs e)
+        {
+            LoadNames();
+            GenerateNames();
         }
     }
 }
