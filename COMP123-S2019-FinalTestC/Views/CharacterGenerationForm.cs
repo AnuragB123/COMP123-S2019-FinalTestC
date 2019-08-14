@@ -29,7 +29,7 @@ namespace COMP123_S2019_FinalTestC.Views
         }
 
         /// <summary>
-        /// Loads the two text files into the respective lists
+        /// This method loads the two text files into the respective lists
         /// </summary>
         public void LoadNames()
         {
@@ -56,6 +56,9 @@ namespace COMP123_S2019_FinalTestC.Views
             }
         }
 
+        /// <summary>
+        /// This method chooses a random name in both first name and last name and displays in the respective label
+        /// </summary>
         public void GenerateNames()
         {
             //First Name Generator
@@ -71,9 +74,14 @@ namespace COMP123_S2019_FinalTestC.Views
             LastNameDataLabel.Text = lastName;
         }
 
+        /// <summary>
+        /// This is the method that generates random numbers between 1 to 15 for each ability
+        /// </summary>
         public void GenerateAbilitiesValues()
         {
+            //Random used to generate the random numbers
             Random Value = new Random();
+            
             int strengthValueRandomNumber = Value.Next(1, 15);
             StrengthDataLabel.Text = strengthValueRandomNumber.ToString();
 
@@ -92,14 +100,13 @@ namespace COMP123_S2019_FinalTestC.Views
             int socialStandingValueRandomNumber = Value.Next(1, 15);
             SocailStandingDataLabel.Text = socialStandingValueRandomNumber.ToString();
 
+            //Assigns the Program.character to the respective properties of the class generated
             Program.character.Strength = strengthValueRandomNumber.ToString();
             Program.character.Dexterity = dexterityValueRandomNumber.ToString();
             Program.character.Endurance = enduranceValueRandomNumber.ToString();
             Program.character.Intellect = intellectValueRandomNumber.ToString();
             Program.character.Education = enduranceValueRandomNumber.ToString();
             Program.character.SocialStanding = SocailStandingDataLabel.Text;
-
-
         }
         /// <summary>
         /// This is the event handler for the BackButton Click event
@@ -139,12 +146,22 @@ namespace COMP123_S2019_FinalTestC.Views
             Program.character.Identiy.LastName = LastNameDataLabel.Text;
         }
 
+        /// <summary>
+        /// This is the event handler when Character Generation Form is loaded
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CharacterGenerationForm_Load(object sender, EventArgs e)
         {
             LoadNames();
             GenerateNames();
         }
 
+        /// <summary>
+        /// This is the event handler when the Generate Abilities Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GenerateAbiltiesButton_Click(object sender, EventArgs e)
         {
             GenerateAbilitiesValues();
